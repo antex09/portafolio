@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Currículum Vitae de Miguelson Simon"/>
+    <link rel="icon" type="image/x-icon"  href="/img/web-development.svg">
+    <title>Miguelson Simon</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/
+          css2?family=Montserrat:wght@400;500;700&display=swap"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/
+          normalize.css@8.0.1/normalize.min.css"/>
+          
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/navbar.css"/>
+    <link rel="stylesheet" href="styles/profile.css"/>
+    <link rel="stylesheet" href="styles/skills.css"/>
+    <link rel="stylesheet" href="styles/projects.css"/>
+    <link rel="stylesheet" href="styles/contact.css"/>
+    <link rel="stylesheet" href="styles/hobbies.css">
+        <script defer src="script/app.js"></script>
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img height="50"; width="55" src="./img/development.jpg" alt="image programador"/>
+          <div class="logotype"> Miguelson<br/>Simon</div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú"/>
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú"/>
+          </button>
+          <li><a href="#profile" class="selected">Perfil</a></li>
+          <li><a href="#experience">Proyectos</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile" id="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy <br/>Miguelson Simon</h1>
+          <p class="profile-details">
+            Soy un apasionado por la arquitectura y desarrollo de software. Nuevo en el mundo de la tecnología
+            y mi experiencia en el área es mínima, pero tengo ganas de seguir aprendiendo para mejorar 
+            mis habilidades profesionales. Actualmente, soy estudiante de desarrollo web
+            en #Alura Latam, del programa ONE (Oracle Next Education).
+          </p>
+          <a class="profile-btn" href="/CV MIGUELSON.pdf" download >Descargar CV</a>
+        </div>
+        <span class="profile-img-section">
+          <img class="profile-img" src="img/mi-foto1.jpeg" alt="imagen del desarrollador de la página"/>
+          <div class="profile-img-line"></div>
+        </span>
+      </section>
+    </div>
+
+    <section class="projects" id="experience">
+      <img src="img/wave.svg" alt="división" class="wave"/>
+      <div class="projects-body">
+        <h2 class="projects-title">Proyectos</h2>
+        <div class="projects-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="projects">
+            <div class="projects-date">2024 hasta la fecha</div>
+            <div class="projects-institute">#Alura LATAM</div>
+            <div class="projects-position">Encriptador de texto</div>
+            <div class="projects-description">
+          
+            </div>
+          </div>
+          <div class="experience experience_left">
+            <div class="projects-date">2024 hasta la fecha</div>
+            <div class="projects-institute">#Alura Latam</div>
+            <div class="projects-position">Juego número secreto</div>
+            <div class="projects-description">
+            
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="projects-date">2024 hasta la fecha</div>
+            <div class="projects-institute">#Alura Latam</div>
+            <div class="projects-position">Alura Midi</div>
+            <div class="projects-description">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="skills" id="skills">
+        <h2 class="skills-title">Habilidades</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">CSS</li>
+          <li class="skills-skill">HTML</li>
+          <li class="skills-skill">JavaScript</li>
+          <div class="skills-skill">Nodejs</div>
+          <div class="skills-skill">Python</div>
+        </ul>
+        
+      </section>
+    </div>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="contact" id="contact">
+        <h2 class="contact-title">Contacto</h2>
+        <div class="contact-details">
+          <div class="contact-details-group">
+            <p class="contact-label">Dirección:</p>
+            <p class="contact-text">Santiago, Chile</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-label">Email:</p>
+            <p class="contact-text">migueslon.payne@gmail.com</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-text">
+              Deje su mensaje y con gusto le responderé
+            </p>
+          </div>
+        </div>
+        <form class="contact-form" name="contact" gmail>
+          <div class="contact-form-group">
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name"/>
+          </div>
+          <div class="contact-form-group">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email"/>
+          </div>
+          <div class="contact-form-group">
+            <label for="message">Mensaje</label>
+            <textarea required name="message" id="message" rows="6"></textarea>
+          </div>
+          <button type="submit" class="contact-form-submit">Enviar</button>
+        </form>
+        <nav class="social">
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/antex09/portafolio-migue.git" class="social-link">
+                <img src="img/social/github.svg" alt="github profile"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/migue-simone" class="social-link">
+                <img src="img/social/linkedin.svg" alt="linkedin profile" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </body>
+</html>
